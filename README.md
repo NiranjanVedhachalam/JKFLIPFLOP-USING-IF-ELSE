@@ -2,7 +2,7 @@
 
 **REGISTER NO: 212224110042**
 
-# EX NO: 7 - JKFLIPFLOP USING IF ELSE
+# EX NO: 4 - IMPLEMENTATION OF JKFLIPFLOP 
 
 **AIM:** 
 
@@ -38,15 +38,50 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **PROCEDURE**
 
-1.	Type the program in Quartus software.
+### 1. Open Quartus Software
+Launch **Quartus Prime** on your system.
 
-2.	Compile and run the program.
+### 2. Create a New Project
+- Navigate to **File > New Project Wizard**.
+- Set your **project directory**, **project name**, and **top-level entity name**.
+- Add your **Verilog (.v)** or **VHDL (.vhd)** source file.
+- Select the correct **FPGA device** based on your target board.
 
-3.	Generate the RTL schematic and save the logic diagram.
+### 3. Add Design Code
+- Open your top-level module (e.g., `main.v`).
+- Paste or write your Verilog/VHDL design.
 
-4.	Create nodes for inputs and outputs to generate the timing diagram.
+### 4. Compile the Design
+- Go to **Processing > Start Compilation**.
+- Wait until the compilation process is complete.
+- Resolve any errors or warnings if present.
 
-5.	For different input combinations generate the timing diagram.
+### 5. Generate RTL Schematic
+- Navigate to **Tools > Netlist Viewers > RTL Viewer**.
+- View the generated RTL schematic.
+- Save the schematic using **File > Export** (as image or PDF).
+
+### 6. Assign I/O Pins
+- Open **Assignments > Pin Planner**.
+- Assign FPGA pins to your module’s inputs and outputs.
+- Click **Save** once done.
+
+### 7. Create Waveform for Simulation
+- Go to **File > New > Other Files > Vector Waveform File (.vwf)**.
+- Click **Edit > Insert > Insert Node or Bus**.
+- Select all input and output signals to monitor.
+
+### 8. Set Simulation Parameters
+- Define end time using **Edit > End Time** (e.g., `1 us`).
+- Apply different **input combinations** on the waveform.
+
+### 9. Run Functional Simulation
+- Go to **Processing > Start Simulation**.
+- The **timing diagram** (simulation output) will be displayed.
+
+### 10. Save the Timing Diagram
+- Save the waveform for future reference.
+- Export the timing diagram image via **File > Export Image**.
    
 
 **PROGRAM**
@@ -66,4 +101,4 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 **RESULTS**
 
-JK flipflop is implemented using verilog and validating their functionality using their functional tables.
+JK flipflop is implemented using verilog and their functionality using their functional tables is validated.
